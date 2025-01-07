@@ -4,7 +4,7 @@ rm -rf $0
 script_host=https://raw.githubusercontent.com/herozmy/sing-box-mosdns-fakeip
 tag=main
 sub_host="https://sub-singbox.herozmy.com"
-file_host="https://file.herozmy.com"
+file_host="https://d.herozmy.com"
 #del_sys="rm -rf /root/"
 mkdir -p /tmp/install
 tmpcache=tmp/install
@@ -536,7 +536,7 @@ rm -rf .git
 mkdir -p /etc/${selected_option}/providers
 mv /root/singbox_rule /etc/${selected_option}/rule
 ## 写入sing-box json配置文件
- if curl -o /etc/${selected_option}/config.json $file_host/script/config/sing-box_p.json; then
+ if curl -o /etc/${selected_option}/config.json $file_host/public/Routing/Config/sing-box/sing-box-p-fakeip.json; then
     green "配置文件下载成功"
     sed -i "s|\"download_url\": \"机场订阅\"|\"download_url\": \"$suburl\"|g" /etc/${selected_option}/config.json
 else
