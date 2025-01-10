@@ -89,15 +89,7 @@ plugins:
       dump_file: /etc/mosdns/cache.dump
       dump_interval: 0
 
-  - tag: reject_3
-    type: sequence
-    args:
-      - exec: reject 3
 
-  - tag: reject_blocklist
-    type: sequence
-    args:
-      - exec: query_summary reject_blockl
 
   - tag: reject_3
     type: sequence
@@ -148,7 +140,7 @@ plugins:
       upstreams:
        # - addr: 10.10.10.254:5353
         #- addr: 10.10.10.114
-        - addr: tcp://127.0.0.1:5353
+        - addr: tcp://10.10.10.114:6666
           enable_pipeline: false
           insecure_skip_verify: false
           idle_timeout: 50
