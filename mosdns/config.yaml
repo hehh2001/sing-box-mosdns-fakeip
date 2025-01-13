@@ -140,7 +140,7 @@ plugins:
       upstreams:
        # - addr: 10.10.10.254:5353
         #- addr: 10.10.10.114
-        - addr: tcp://10.10.10.114:6666
+        - addr: 10.10.10.114:6666
           enable_pipeline: false
           insecure_skip_verify: false
           idle_timeout: 50
