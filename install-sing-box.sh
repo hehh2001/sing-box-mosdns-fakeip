@@ -95,7 +95,7 @@ fi
 }
 ################################开始创建config.json################################
 install_config() {
-    sub_host="https://sub-singbox.herozmy.com"   
+    sub_host="hehh2001-sing-box-conf.vercel.app"   
     echo "请选择："
     echo "1. tproxy_fake_ip O大原版 <适用机场多规则分流> 配合O大mosdns食用"
     echo "2. tproxy_fake_ip O大原版 <适用VPS自建模式>配合O大mosdns食用"
